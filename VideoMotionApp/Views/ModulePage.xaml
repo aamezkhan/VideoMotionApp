@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="VideoMotionApp.Views.ModulePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Upload module"
+    mc:Ignorable="d">
+    <!--  xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"  -->
+
+    <ContentPage.Content>
+        <Grid
+            Margin="0,5"
+            Padding="0"
+            ColumnSpacing="0"
+            HorizontalOptions="FillAndExpand"
+            RowSpacing="0"
+            VerticalOptions="FillAndExpand">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Button
+                x:Name="btnCapture"
+                Grid.Row="0"
+                Padding="5,0"
+                BackgroundColor="Accent"
+                Clicked="btnCapture_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                Text="Capture video"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" />
+
+            <Label
+                x:Name="lblPathName"
+                Grid.Row="1"
+                Padding="10"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand" />
+
+            <Button
+                x:Name="btnUpload"
+                Grid.Row="2"
+                Padding="5,0"
+                BackgroundColor="Aqua"
+                Clicked="btnUpload_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                IsEnabled="False"
+                Text="Upload Video"
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand" />
+
+
+
+            <!--  Source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  -->
+            <!--<forms:VideoView
+                x:Name="videoPlayer"
+                Grid.Row="2"
+                HeightRequest="202"
+                VerticalOptions="FillAndExpand"
+                WidthRequest="202" />-->
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

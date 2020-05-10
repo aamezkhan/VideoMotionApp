@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1"
+          android:versionName="1.0" package="com.companyname.videomotionapp">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT" />
+  <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.FLASHLIGHT" />
+  <uses-feature android:name="android.hardware.camera.autofocus" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  
+  <application android:label="VideoMotionApp.Android">
+    <provider android:name="android.support.v4.content.FileProvider"
+          android:authorities="com.companyname.videomotionapp.fileprovider"
+          android:exported="false"
+          android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/file_paths"></meta-data>
+    </provider>
+  </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="VideoMotionApp.Views.SignUpPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Sign Up"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <Grid
+            Margin="0"
+            Padding="5"
+            ColumnSpacing="0"
+            HorizontalOptions="FillAndExpand"
+            RowSpacing="10"
+            VerticalOptions="FillAndExpand">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Label
+                Grid.Row="0"
+                FontAttributes="Bold"
+                FontSize="36"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="Sign Up with Token"
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand" />
+
+            <Entry
+                x:Name="txtToken"
+                Grid.Row="1"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                HorizontalTextAlignment="Start"
+                Placeholder="Enter Token"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand" />
+
+            <Button
+                x:Name="btnSignUp"
+                Grid.Row="2"
+                BackgroundColor="Accent"
+                Clicked="btnSignUp_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                Text="Sign Up"
+                TextColor="White"
+                VerticalOptions="CenterAndExpand" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

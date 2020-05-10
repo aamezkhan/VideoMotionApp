@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="VideoMotionApp.Views.InitializePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Home"
+    mc:Ignorable="d">
+    <!--  xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"  -->
+
+    <ContentPage.Content>
+
+        <Grid
+            Margin="0"
+            Padding="0"
+            ColumnSpacing="0"
+            HorizontalOptions="FillAndExpand"
+            RowSpacing="0"
+            VerticalOptions="FillAndExpand">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <ListView
+                x:Name="lvModules"
+                HasUnevenRows="True"
+                ItemTapped="lvModules_ItemTapped"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <Frame
+                                Grid.Row="0"
+                                Margin="10,5"
+                                Padding="0"
+                                BackgroundColor="White"
+                                BorderColor="White"
+                                CornerRadius="7"
+                                HasShadow="True"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand">
+
+                                <Grid
+                                    Margin="0"
+                                    Padding="10,7,10,10"
+                                    BackgroundColor="Transparent"
+                                    ColumnSpacing="0"
+                                    HorizontalOptions="FillAndExpand"
+                                    RowSpacing="0"
+                                    VerticalOptions="FillAndExpand">
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <!--  Source="contactUs_icon.png"  -->
+
+                                    <StackLayout
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Margin="0"
+                                        Padding="0"
+                                        HorizontalOptions="FillAndExpand"
+                                        Spacing="7"
+                                        VerticalOptions="FillAndExpand">
+
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontFamily="Montserrat-Bold"
+                                            FontSize="18"
+                                            HorizontalOptions="FillAndExpand"
+                                            HorizontalTextAlignment="Start"
+                                            LineBreakMode="WordWrap"
+                                            Text="{Binding Name}"
+                                            TextColor="Black"
+                                            VerticalOptions="StartAndExpand" />
+
+                                        <Label
+                                            FontAttributes="None"
+                                            FontFamily="Montserrat-Medium"
+                                            FontSize="14"
+                                            HorizontalOptions="FillAndExpand"
+                                            HorizontalTextAlignment="Start"
+                                            LineBreakMode="WordWrap"
+                                            Text="{Binding Description}"
+                                            TextColor="Black"
+                                            VerticalOptions="FillAndExpand" />
+
+                                    </StackLayout>
+
+                                </Grid>
+
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!--  Source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  -->
+
+            <!--<mm:VideoView
+                x:Name="videoPlayer"
+                IsVisible="False"
+                ShowControls="False"
+                VerticalOptions="FillAndExpand" />-->
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
