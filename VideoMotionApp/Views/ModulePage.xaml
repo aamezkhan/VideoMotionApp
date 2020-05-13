@@ -6,16 +6,17 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Upload module"
+    BackgroundColor="White"
     mc:Ignorable="d">
     <!--  xmlns:mm="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"  -->
 
     <ContentPage.Content>
         <Grid
-            Margin="0,5"
+            Margin="5"
             Padding="0"
             ColumnSpacing="0"
             HorizontalOptions="FillAndExpand"
-            RowSpacing="0"
+            RowSpacing="10"
             VerticalOptions="FillAndExpand">
 
             <Grid.RowDefinitions>
@@ -30,17 +31,61 @@
                 Padding="5,0"
                 BackgroundColor="Accent"
                 Clicked="btnCapture_Clicked"
+                CornerRadius="7"
+                HeightRequest="40"
                 HorizontalOptions="CenterAndExpand"
-                Text="Capture video"
+                Text="Capture Video"
                 TextColor="White"
                 VerticalOptions="CenterAndExpand" />
 
-            <Label
-                x:Name="lblPathName"
+            <Frame
+                x:Name="frmVideoLocation"
                 Grid.Row="1"
-                Padding="10"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand" />
+                Margin="5"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="White"
+                CornerRadius="7"
+                HasShadow="True"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="False"
+                VerticalOptions="FillAndExpand">
+
+                <Grid
+                    Margin="0"
+                    Padding="10"
+                    BackgroundColor="Transparent"
+                    ColumnSpacing="0"
+                    HorizontalOptions="FillAndExpand"
+                    RowSpacing="5"
+                    VerticalOptions="FillAndExpand">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        FontAttributes="Italic"
+                        FontSize="14"
+                        HorizontalOptions="FillAndExpand"
+                        HorizontalTextAlignment="Start"
+                        Text="Video Storage Location"
+                        TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+
+                    <Label
+                        x:Name="lblPathName"
+                        Grid.Row="1"
+                        Padding="0"
+                        HorizontalOptions="FillAndExpand"
+                        LineBreakMode="WordWrap"
+                        VerticalOptions="StartAndExpand" />
+
+                </Grid>
+
+            </Frame>
 
             <Button
                 x:Name="btnUpload"
@@ -48,13 +93,13 @@
                 Padding="5,0"
                 BackgroundColor="Aqua"
                 Clicked="btnUpload_Clicked"
+                CornerRadius="7"
+                HeightRequest="40"
                 HorizontalOptions="CenterAndExpand"
-                IsEnabled="False"
+                IsVisible="False"
                 Text="Upload Video"
                 TextColor="Black"
-                VerticalOptions="CenterAndExpand" />
-
-
+                VerticalOptions="FillAndExpand" />
 
             <!--  Source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  -->
             <!--<forms:VideoView

@@ -73,8 +73,9 @@ namespace VideoMotionApp.Views
                             string fileExt = Path.GetExtension(file.Path);
                             fileExtension = fileExt;
 
-                            btnCapture.IsEnabled = false;
-                            btnUpload.IsEnabled = true;
+                            btnCapture.IsVisible = false;
+                            btnUpload.IsVisible = true;
+                            frmVideoLocation.IsVisible = true;
                             //if (!string.IsNullOrWhiteSpace(filePath))
                             //{
                             //    FileInfo fileInfo = new FileInfo(filePath);
@@ -109,8 +110,8 @@ namespace VideoMotionApp.Views
 
                 Xamarin.Forms.DependencyService.Get<IFtpWebRequest>().uploadFile(ftpUrl, fileName, filePath, userName, password, uploadDirectory);
 
-                btnUpload.IsEnabled = false;
-                btnCapture.IsEnabled = true;
+                btnUpload.IsVisible = frmVideoLocation.IsVisible = false;
+                btnCapture.IsVisible = true;
 
                 File.Delete(filePath);
             }

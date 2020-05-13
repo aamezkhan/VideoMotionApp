@@ -1,0 +1,16 @@
+D:\TFS\VideoMotionApp\VideoMotionApp\bin\Debug\netstandard2.0\VideoMotionApp.deps.json
+D:\TFS\VideoMotionApp\VideoMotionApp\bin\Debug\netstandard2.0\VideoMotionApp.dll
+D:\TFS\VideoMotionApp\VideoMotionApp\bin\Debug\netstandard2.0\ref\VideoMotionApp.dll
+D:\TFS\VideoMotionApp\VideoMotionApp\bin\Debug\netstandard2.0\VideoMotionApp.pdb
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\VideoMotionApp.csprojAssemblyReference.cache
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\Views\InitializePage.xaml.g.cs
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\Views\ModulePage.xaml.g.cs
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\VideoMotionApp.AssemblyInfoInputs.cache
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\VideoMotionApp.AssemblyInfo.cs
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\VideoMotionApp.dll
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\ref\VideoMotionApp.dll
+D:\TFS\VideoMotionApp\VideoMotionApp\obj\Debug\netstandard2.0\VideoMotionApp.pdb

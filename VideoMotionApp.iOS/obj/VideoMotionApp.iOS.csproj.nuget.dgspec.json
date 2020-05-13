@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj": {}
+    "D:\\TFS\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj": {}
   },
   "projects": {
-    "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj": {
+    "D:\\TFS\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj",
+        "projectUniqueName": "D:\\TFS\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj",
         "projectName": "VideoMotionApp.iOS",
-        "projectPath": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj",
+        "projectPath": "D:\\TFS\\VideoMotionApp\\VideoMotionApp.iOS\\VideoMotionApp.iOS.csproj",
         "packagesPath": "C:\\Users\\AMZ\\.nuget\\packages\\",
-        "outputPath": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp.iOS\\obj\\",
+        "outputPath": "D:\\TFS\\VideoMotionApp\\VideoMotionApp.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj": {
-                "projectPath": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj"
+              "D:\\TFS\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj": {
+                "projectPath": "D:\\TFS\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj": {
+    "D:\\TFS\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj",
+        "projectUniqueName": "D:\\TFS\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj",
         "projectName": "VideoMotionApp",
-        "projectPath": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj",
+        "projectPath": "D:\\TFS\\VideoMotionApp\\VideoMotionApp\\VideoMotionApp.csproj",
         "packagesPath": "C:\\Users\\AMZ\\.nuget\\packages\\",
-        "outputPath": "E:\\AK_Workspace\\Ah_AlAmer_Workspace\\VideoMotion_Workspace\\VideoMotionApp\\VideoMotionApp\\obj\\",
+        "outputPath": "D:\\TFS\\VideoMotionApp\\VideoMotionApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -111,6 +111,8 @@
                             Padding="5,0"
                             BackgroundColor="Accent"
                             Clicked="btnSignUp_Clicked"
+                            CornerRadius="7"
+                            HeightRequest="40"
                             HorizontalOptions="EndAndExpand"
                             Text="Sign Up Now"
                             TextColor="White"
