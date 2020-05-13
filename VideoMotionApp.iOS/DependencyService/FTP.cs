@@ -8,6 +8,9 @@ using System.Text;
 using Foundation;
 using UIKit;
 using VideoMotionApp.DependencyService;
+using VideoMotionApp.iOS.DependencyService;
+
+[assembly: Xamarin.Forms.Dependency(typeof(FTP))]
 
 namespace VideoMotionApp.iOS.DependencyService
 {

@@ -30,6 +30,19 @@ namespace VideoMotionApp.Views
             this.Title = this.module.Name;
         }
 
+        //Func<object> func = () =>
+        //{
+        //var obj = Xamarin.Forms.DependencyService.Get<IPhotoOverlay>().GetImageOverlay();
+        //return obj;
+
+        //var imageView = new UIImageView(UIImage.FromBundle("face-template.png"));
+        //imageView.ContentMode = UIViewContentMode.ScaleAspectFit;
+
+        //var screen = UIScreen.MainScreen.Bounds;
+        //imageView.Frame = screen;
+
+        //return imageView;
+        //};
         private async void btnCapture_Clicked(object sender, EventArgs e)
         {
             try
@@ -57,14 +70,25 @@ namespace VideoMotionApp.Views
 
                     if (cameraStatus == PermissionStatus.Granted && storageStatus == PermissionStatus.Granted)
                     {
-                        var file = await CrossMedia.Current.TakeVideoAsync(new StoreVideoOptions
+                        var StoreVideoOptions = new StoreVideoOptions
                         {
                             Quality = VideoQuality.Low,
                             DefaultCamera = CameraDevice.Rear,
                             //DesiredLength = TimeSpan.FromMinutes(3),
                             //ModalPresentationStyle = MediaPickerModalPresentationStyle.FullScreen,
-                        });
+                        };
 
+                        if (Device.OS == TargetPlatform.iOS)
+                        {
+                            Func<object> func = () =>
+                            {
+                                var obj = Xamarin.Forms.DependencyService.Get<IPhotoOverlay>().GetImageOverlay();
+                                return obj;
+                            };
+                            StoreVideoOptions.OverlayViewProvider = func;
+                        }
+
+                        var file = await CrossMedia.Current.TakeVideoAsync(StoreVideoOptions);
                         if (file != null)
                         {
                             var videoBytes = Common.StreamToByte(file.GetStream());

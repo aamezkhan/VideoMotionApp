@@ -61,6 +61,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DependencyService\FTP.cs" />
+    <Compile Include="DependencyService\ImageOverlayService.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -145,5 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\iconBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconOverlay.svg" />
   </ItemGroup>
 </Project>
