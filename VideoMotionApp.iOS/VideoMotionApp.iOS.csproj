@@ -143,4 +143,7 @@
       <Name>VideoMotionApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconBackground.png" />
+  </ItemGroup>
 </Project>

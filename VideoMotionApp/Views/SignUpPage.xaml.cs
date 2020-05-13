@@ -23,8 +23,13 @@ namespace VideoMotionApp.Views
             {
                 if (!string.IsNullOrEmpty(txtToken.Text))
                 {
+                    txtToken.PlaceholderColor = Color.Gray;
                     Utility.FileManager.SaveLog(txtToken.Text);
                     App.Current.MainPage = new NavigationPage(new Views.InitializePage());
+                }
+                else
+                {
+                    txtToken.PlaceholderColor = Color.Red;
                 }
             }
             catch (Exception ex)

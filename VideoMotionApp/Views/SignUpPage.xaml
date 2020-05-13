@@ -6,52 +6,122 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Sign Up"
+    NavigationPage.HasNavigationBar="False"
     mc:Ignorable="d">
+
     <ContentPage.Content>
+
         <Grid
             Margin="0"
-            Padding="5"
+            Padding="0"
             ColumnSpacing="0"
             HorizontalOptions="FillAndExpand"
-            RowSpacing="10"
             VerticalOptions="FillAndExpand">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
-                <RowDefinition Height="auto" />
-            </Grid.RowDefinitions>
-
-            <Label
-                Grid.Row="0"
-                FontAttributes="Bold"
-                FontSize="36"
+            <Image
+                Aspect="AspectFill"
                 HorizontalOptions="FillAndExpand"
-                HorizontalTextAlignment="Center"
-                Text="Sign Up with Token"
-                TextColor="Black"
-                VerticalOptions="CenterAndExpand" />
+                Source="iconBackground.png"
+                VerticalOptions="FillAndExpand" />
 
-            <Entry
-                x:Name="txtToken"
-                Grid.Row="1"
-                HeightRequest="50"
+            <Grid
+                Margin="0"
+                Padding="5"
+                ColumnSpacing="0"
                 HorizontalOptions="FillAndExpand"
-                HorizontalTextAlignment="Start"
-                Placeholder="Enter Token"
-                PlaceholderColor="Gray"
-                TextColor="Black"
-                VerticalOptions="CenterAndExpand" />
+                RowSpacing="10"
+                VerticalOptions="FillAndExpand">
 
-            <Button
-                x:Name="btnSignUp"
-                Grid.Row="2"
-                BackgroundColor="Accent"
-                Clicked="btnSignUp_Clicked"
-                HorizontalOptions="CenterAndExpand"
-                Text="Sign Up"
-                TextColor="White"
-                VerticalOptions="CenterAndExpand" />
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Frame
+                    Grid.Row="0"
+                    Margin="20,5"
+                    Padding="0"
+                    BackgroundColor="White"
+                    BorderColor="White"
+                    CornerRadius="7"
+                    HasShadow="True"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand">
+
+                    <Grid
+                        Margin="0"
+                        Padding="10"
+                        BackgroundColor="Transparent"
+                        ColumnSpacing="0"
+                        HorizontalOptions="FillAndExpand"
+                        RowSpacing="20"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="36"
+                            HorizontalOptions="FillAndExpand"
+                            HorizontalTextAlignment="Center"
+                            Text="Sign Up with Token"
+                            TextColor="Black"
+                            VerticalOptions="CenterAndExpand"
+                            VerticalTextAlignment="Center" />
+
+                        <StackLayout
+                            Grid.Row="1"
+                            Margin="0"
+                            Padding="0"
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Vertical"
+                            Spacing="5"
+                            VerticalOptions="FillAndExpand">
+
+                            <Label
+                                FontAttributes="Italic"
+                                FontSize="12"
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="Start"
+                                Text="Please enter the token below."
+                                TextColor="Black"
+                                VerticalOptions="CenterAndExpand" />
+
+                            <Entry
+                                x:Name="txtToken"
+                                FontSize="16"
+                                HeightRequest="45"
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="Start"
+                                Keyboard="Text"
+                                Placeholder="Enter token"
+                                PlaceholderColor="Gray"
+                                TextColor="Black"
+                                VerticalOptions="CenterAndExpand" />
+
+                        </StackLayout>
+
+                        <Button
+                            x:Name="btnSignUp"
+                            Grid.Row="2"
+                            Padding="5,0"
+                            BackgroundColor="Accent"
+                            Clicked="btnSignUp_Clicked"
+                            HorizontalOptions="EndAndExpand"
+                            Text="Sign Up Now"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand" />
+
+                    </Grid>
+
+                </Frame>
+
+            </Grid>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

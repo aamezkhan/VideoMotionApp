@@ -11,15 +11,16 @@ namespace VideoMotionApp
             InitializeComponent();
             // CrossMediaManager.Current.Init();
 
-            //MainPage = new NavigationPage(new Views.SignUpPage());
-            if (Utility.FileManager.ExistTokenFile().Result)
-            {
-                MainPage = new NavigationPage(new Views.InitializePage());
-            }
-            else
-            {
-                MainPage = new NavigationPage(new Views.SignUpPage());
-            }
+            MainPage = new NavigationPage(new Views.SignUpPage());
+
+            //if (Utility.FileManager.ExistTokenFile().Result)
+            //{
+            //    MainPage = new NavigationPage(new Views.InitializePage());
+            //}
+            //else
+            //{
+            //    MainPage = new NavigationPage(new Views.SignUpPage());
+            //}
         }
 
         protected override void OnStart()
